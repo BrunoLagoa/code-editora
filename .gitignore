@@ -16,3 +16,7 @@ Homestead.json
 *.sublime-workspace
 *.sublime-project
 .idea/
+
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
