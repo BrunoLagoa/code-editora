@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::group(['middleware' => 'auth'], function (){
-   Route::resource('categories', 'CategoriesController', ['except' => 'show']);
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('categories', 'CategoriesController', ['except' => 'show']);
+    Route::resource('books', 'BooksController', ['except' => 'show']);
 });
